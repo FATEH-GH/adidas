@@ -45,7 +45,7 @@ const Customers = () => {
             />
           </div>
           <p className="text-white text-[20px] text-center   max-w-sm">
-            The product not only met but exceeded my expectations. I'll
+            The product not only met but exceeded my expectations. I&apos;ll
             definitely be a returning customer!
           </p>
           <div className="flex items-center justify-center gap-4">

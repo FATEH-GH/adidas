@@ -41,7 +41,7 @@ const Hero = () => {
 
         <div className="flex flex-wrap justify-between py-10 px-6">
           {infos.map((info) => (
-            <div>
+            <div key={info.label}>
               <h4 className="font-bold text-[42px] ">{info.number}</h4>
               <p className="text-gray-500">{info.label}</p>
             </div>
