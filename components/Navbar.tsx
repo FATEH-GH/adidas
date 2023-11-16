@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import React from "react";
-import { GiHamburgerMenu } from "react-icons/Gi";
+import { GiHamburgerMenu } from "react-icons/gi";
 import AdidasAnimation from "../public/AdidasAnimationLogo.json";
 import Lottie from "lottie-react";
 import { NavList } from "@/constants";
