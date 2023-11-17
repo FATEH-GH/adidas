@@ -12,7 +12,7 @@ const Updates = () => {
           <br className="lg:block hidden" /> & Newsletter
         </h3>
       </div>
-      <div className="border-2 rounded-full flex gap-10 max-sm:gap-2  py-4 px-12  lg:min-w-lg">
+      <div className="border-2 rounded-full flex gap-10 max-sm:gap-2  py-4 max-sm:px-4 px-12  lg:min-w-lg">
         <input
           type="text"
           placeholder="subscribe@nike.com"
