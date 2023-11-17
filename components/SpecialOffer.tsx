@@ -26,15 +26,15 @@ const SpecialOffer = () => {
           desires, surpassing the loftiest expectations. Your journey with us is
           nothing short of exceptional.
         </p>
-        <div className="mt-12 flex gap-4">
+        <div className="mt-12 flex gap-4 max-sm:flex-col">
           <Button
             text="Shop now"
-            styles="flex juatify-center p-4 gap-4 text-white text-[22px] bg-orange-500 rounded-3xl mx-6"
+            styles="flex juatify-center p-4 max-sm:justify-evenly gap-4 text-white text-[22px] bg-orange-500 rounded-3xl mx-6"
             icon="/arrow-right.svg"
           />
           <Button
             text="Learn more"
-            styles="rounded-full text-gray-500 text-[22px] border-2 p-4 "
+            styles="rounded-3xl text-gray-500 text-[22px] border-2 p-4 mx-6 "
           />
         </div>
       </div>
