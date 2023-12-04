@@ -28,7 +28,7 @@ export const Help = [
 ];
 
 export const GetInTouch = [
-  { href: "/", label: "customer@nike.com" },
+  { href: "/", label: "customer@adidas.com" },
   { href: "/", label: "+92554862354" },
 ];
 
