@@ -5,8 +5,8 @@ import shoecard4 from "../public/shoecard4.png";
 
 export const NavList = [
   { href: "#home", label: "Home" },
-  { href: "#AboutUs", label: "About Us" },
   { href: "#product", label: "Product" },
+  { href: "#AboutUs", label: "About Us" },
   { href: "#ContactUs", label: "Contact Us" },
 ];
 
