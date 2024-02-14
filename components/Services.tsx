@@ -1,12 +1,10 @@
-"use client";
-
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { DivMotion } from "./FramerMotion";
 
 const Services = () => {
   return (
     <section className="my-32 mx-8  flex flex-shrink gap-10 max-md:flex-col">
-      <motion.div
+      <DivMotion
         className="shadow-2xl p-12 rounded-xl dark:shadow-white "
         initial={{ opacity: 0, x: -100 }}
         transition={{ duration: 0.5 }}
@@ -25,8 +23,8 @@ const Services = () => {
         <p className="text-gray-500 text-[18px]">
           Enjoy seamless shopping with our complimentary shipping service.{" "}
         </p>
-      </motion.div>
-      <motion.div
+      </DivMotion>
+      <DivMotion
         className="shadow-2xl p-12 rounded-xl dark:shadow-white"
         initial={{ opacity: 0, y: 100 }}
         transition={{ duration: 0.8 }}
@@ -45,8 +43,8 @@ const Services = () => {
         <p className="text-gray-500 text-[18px]">
           Experience worry-free transactions with our secure payment options.
         </p>
-      </motion.div>
-      <motion.div
+      </DivMotion>
+      <DivMotion
         className="shadow-2xl p-12 rounded-xl dark:shadow-white"
         initial={{ opacity: 0, x: 100 }}
         transition={{ duration: 0.5 }}
@@ -65,7 +63,7 @@ const Services = () => {
         <p className="text-gray-500 text-[18px]">
           Our dedicated team is here to assist you every step of the way.
         </p>
-      </motion.div>
+      </DivMotion>
     </section>
   );
 };

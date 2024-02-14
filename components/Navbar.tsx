@@ -13,9 +13,9 @@ import { ModeToggle } from "./ModeToggle";
 
 const Navbar = () => {
   return (
-    <section className="max-container relative z-10">
+    <section className="max-container relative z-10 mb-4">
       <nav className="flex justify-between mx-0 sm:mx-6">
-        <div className="h-[125px] w-[125px] xl:h-[175px] xl:w-[175px] flex justify-center ">
+        <div className="h-[125px] w-[125px] xl:h-[150px] xl:w-[150px] flex justify-center ">
           <Link href="/" className="flex justify-center ">
             <Lottie
               animationData={AdidasAnimation}
