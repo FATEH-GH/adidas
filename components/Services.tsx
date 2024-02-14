@@ -1,40 +1,16 @@
 "use client";
 
 import Image from "next/image";
-import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-import { useEffect } from "react";
-const variant1 = {
-  visible: { opacity: 1, scale: 1, x: 0, transition: { duration: 0.5 } },
-  hidden: { opacity: 0, x: -100 },
-};
-
-const variant2 = {
-  visible: { opacity: 1, scale: 1, y: 0, transition: { duration: 0.8 } },
-  hidden: { opacity: 0, y: 100 },
-};
-const variant3 = {
-  visible: { opacity: 1, scale: 1, x: 0, transition: { duration: 0.5 } },
-  hidden: { opacity: 0, x: 100 },
-};
+import { motion } from "framer-motion";
 
 const Services = () => {
-  const control = useAnimation();
-  const [ref, inView] = useInView();
-
-  useEffect(() => {
-    if (inView) {
-      control.start("visible");
-    }
-  }, [control, inView]);
   return (
     <section className="my-32 mx-8  flex flex-shrink gap-10 max-md:flex-col">
       <motion.div
         className="shadow-2xl p-12 rounded-xl dark:shadow-white "
-        ref={ref}
-        variants={variant1}
-        initial="hidden"
-        animate={control}
+        initial={{ opacity: 0, x: -100 }}
+        transition={{ duration: 0.5 }}
+        whileInView={{ opacity: 1, scale: 1, x: 0 }}
       >
         <div className="bg-orange-500 rounded-full flex items-center justify-center max-w-[40px] ">
           <Image
@@ -52,10 +28,9 @@ const Services = () => {
       </motion.div>
       <motion.div
         className="shadow-2xl p-12 rounded-xl dark:shadow-white"
-        ref={ref}
-        variants={variant2}
-        initial="hidden"
-        animate={control}
+        initial={{ opacity: 0, y: 100 }}
+        transition={{ duration: 0.8 }}
+        whileInView={{ opacity: 1, scale: 1, y: 0 }}
       >
         <div className="bg-orange-500 rounded-full flex items-center justify-center max-w-[40px] ">
           <Image
@@ -73,10 +48,9 @@ const Services = () => {
       </motion.div>
       <motion.div
         className="shadow-2xl p-12 rounded-xl dark:shadow-white"
-        ref={ref}
-        variants={variant3}
-        initial="hidden"
-        animate={control}
+        initial={{ opacity: 0, x: 100 }}
+        transition={{ duration: 0.5 }}
+        whileInView={{ opacity: 1, scale: 1, x: 0 }}
       >
         <div className="bg-orange-500 rounded-full flex items-center justify-center max-w-[40px] ">
           <Image
