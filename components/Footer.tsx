@@ -40,6 +40,7 @@ const Footer = () => {
                 height={40}
                 width={40}
                 alt="facebook icon"
+                className="bg-white rounded-full p-1"
               />
             </Link>
             <Link href="/">
@@ -48,6 +49,7 @@ const Footer = () => {
                 height={40}
                 width={40}
                 alt="twitter icon"
+                className="bg-white rounded-full p-1"
               />
             </Link>
             <Link href="/">
@@ -56,6 +58,7 @@ const Footer = () => {
                 height={40}
                 width={40}
                 alt="instagram icon"
+                className="bg-white rounded-full p-1"
               />
             </Link>
           </div>
