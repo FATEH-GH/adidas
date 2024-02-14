@@ -24,7 +24,7 @@ const Hero = () => {
         </h1>
 
         <h2 className="font-bold text-[60px] md:text-[80px] py-6 px-6">
-          <span className="xl:bg-white rounded-xl dark:shadow-white xl:whitespace-nowrap relative z-10 pr-20 xl:shadow-2xl dark:text-black sm:px-4">
+          <span className=" xl:bg-white rounded-xl dark:shadow-white xl:whitespace-nowrap relative z-10 pr-20 xl:shadow-2xl dark:text-blue-950 sm:px-4">
             The New Arrival
           </span>
           <br /> <span className="text-orange-500">Adidas</span> Shoes

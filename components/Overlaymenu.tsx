@@ -1,4 +1,5 @@
 import { NavList } from "@/constants";
+import { ModeToggle } from "./ModeToggle";
 
 const Overlaymenu = () => {
   return (
@@ -23,6 +24,9 @@ const Overlaymenu = () => {
           <a href="#ContactUs" className=" text-gray-400">
             <p className="text-[20px]">Contact Us</p>
           </a>
+        </li>
+        <li>
+          <ModeToggle />
         </li>
       </ul>
     </div>
