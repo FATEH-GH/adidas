@@ -19,7 +19,11 @@ const Footer = () => {
             <Link href="/">
               <Waypoint onEnter={() => setRenderLottie(true)} />
               {renderLottie && (
-                <Lottie animationData={AdidasAnimation} loop={false} />
+                <Lottie
+                  animationData={AdidasAnimation}
+                  loop={false}
+                  className="bg-white rounded-full"
+                />
               )}
             </Link>
           </h2>
