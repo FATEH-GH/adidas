@@ -30,7 +30,7 @@ const Services = () => {
   return (
     <section className="my-32 mx-8  flex flex-shrink gap-10 max-md:flex-col">
       <motion.div
-        className="shadow-2xl p-12 rounded-xl "
+        className="shadow-2xl p-12 rounded-xl dark:shadow-white "
         ref={ref}
         variants={variant1}
         initial="hidden"
@@ -51,7 +51,7 @@ const Services = () => {
         </p>
       </motion.div>
       <motion.div
-        className="shadow-2xl p-12 rounded-xl"
+        className="shadow-2xl p-12 rounded-xl dark:shadow-white"
         ref={ref}
         variants={variant2}
         initial="hidden"
@@ -72,7 +72,7 @@ const Services = () => {
         </p>
       </motion.div>
       <motion.div
-        className="shadow-2xl p-12 rounded-xl"
+        className="shadow-2xl p-12 rounded-xl dark:shadow-white"
         ref={ref}
         variants={variant3}
         initial="hidden"
