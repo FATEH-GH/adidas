@@ -16,7 +16,7 @@ const Updates = () => {
         <input
           type="text"
           placeholder="subscribe@nike.com"
-          className="outline-none mx-4 max-sm:mx-0 "
+          className="outline-none mx-4 max-sm:mx-0 bg-transparent "
         />
         <Button
           text="Sign Up"
