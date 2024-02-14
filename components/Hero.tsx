@@ -19,12 +19,12 @@ const Hero = () => {
   return (
     <section id="home" className="max-container flex flex-col xl:flex-row mb-8">
       <div className="xl:w-1/2 ">
-        <h1 className="text-orange-500 text-[18px] px-6">
+        <h1 className="text-orange-500 text-[18px] px-6 ">
           Our Summer collection
         </h1>
 
         <h2 className="font-bold text-[60px] md:text-[80px] py-6 px-6">
-          <span className="xl:bg-white xl:whitespace-nowrap relative z-10 pr-20 xl:shadow-xl">
+          <span className="xl:bg-white rounded-xl dark:shadow-white xl:whitespace-nowrap relative z-10 pr-20 xl:shadow-2xl dark:text-black sm:px-4">
             The New Arrival
           </span>
           <br /> <span className="text-orange-500">Adidas</span> Shoes

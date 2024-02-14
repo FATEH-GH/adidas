@@ -9,14 +9,19 @@ import { NavList } from "@/constants";
 import Button from "./Button";
 import { Sheet, SheetContent, SheetTrigger } from "./ui/sheet";
 import Overlaymenu from "./Overlaymenu";
+import { ModeToggle } from "./ModeToggle";
 
 const Navbar = () => {
   return (
     <section className="max-container relative z-10">
       <nav className="flex justify-between mx-0 sm:mx-6">
-        <div className="h-[125px] w-[125px] xl:h-[175px] xl:w-[175px] flex justify-center">
-          <Link href="/" className="flex justify-center">
-            <Lottie animationData={AdidasAnimation} loop={false} />
+        <div className="h-[125px] w-[125px] xl:h-[175px] xl:w-[175px] flex justify-center ">
+          <Link href="/" className="flex justify-center ">
+            <Lottie
+              animationData={AdidasAnimation}
+              loop={false}
+              className="bg-white rounded-full  p-0"
+            />
           </Link>
         </div>
 
@@ -41,6 +46,9 @@ const Navbar = () => {
               </a>
             </li>
           ))}
+          <div className="flex items-center justify-center">
+            <ModeToggle />
+          </div>
         </ul>
       </nav>
     </section>
