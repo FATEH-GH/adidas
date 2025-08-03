@@ -18,12 +18,23 @@ const Footer = () => {
       <div className=" max-container flex flex-wrap gap-8 lg:flex-row lg:justify-between lg:items-center">
         <div className="px-4">
           <h2 className="h-[125px] w-[125px] xl:h-[175px] xl:w-[175px]">
-            <Link href="/">
+            <Link
+              href="/"
+              className="relative z-20 mr-4 flex items-center space-x-2 px-2 py-1 text-sm font-normal text-black"
+            >
               <Image
-                src={logoFooter}
-                height={80}
+                src={DarkAdidas}
+                alt="logo"
                 width={100}
-                alt="Footer Logo"
+                height={100}
+                className="hidden dark:block  bg-transparent"
+              />
+              <Image
+                src={LightAdidas}
+                alt="logo"
+                width={80}
+                height={100}
+                className="dark:hidden bg-transparent"
               />
             </Link>
           </h2>

@@ -128,10 +128,10 @@ export const NavItems = ({ items, className, onItemClick }: NavItemsProps) => {
       )}
     >
       {items.map((item, idx) => (
-        <a
+        <Link
           onMouseEnter={() => setHovered(idx)}
           onClick={onItemClick}
-          className="relative px-4 py-2 text-[35px] md:text-[20px] text-gray-400 hover:text-gray-500"
+          className="relative px-4 py-2 text-[35px] md:text-[20px] text-gray-400 hover:text-gray-500 dark:text-white dark:hover:text-white/80"
           key={`link-${idx}`}
           href={item.link}
         >
@@ -142,7 +142,7 @@ export const NavItems = ({ items, className, onItemClick }: NavItemsProps) => {
             />
           )}
           <span className="relative z-20">{item.name}</span>
-        </a>
+        </Link>
       ))}
     </motion.div>
   );
@@ -243,21 +243,24 @@ export const MobileNavToggle = ({
 };
 
 export const NavbarLogo = () => {
-  const { theme } = useTheme();
-
-  var logoSrc = theme === "dark" ? DarkAdidas : LightAdidas;
-
   return (
     <Link
       href="/"
       className="relative z-20 mr-4 flex items-center space-x-2 px-2 py-1 text-sm font-normal text-black"
     >
       <Image
-        src={logoSrc}
+        src={DarkAdidas}
+        alt="logo"
+        width={100}
+        height={100}
+        className="hidden dark:block  bg-transparent"
+      />
+      <Image
+        src={LightAdidas}
         alt="logo"
         width={80}
         height={100}
-        className="bg-transparent"
+        className="dark:hidden bg-transparent"
       />
     </Link>
   );

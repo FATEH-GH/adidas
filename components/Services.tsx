@@ -9,6 +9,7 @@ const Services = () => {
         initial={{ opacity: 0, x: -100 }}
         transition={{ duration: 0.5 }}
         whileInView={{ opacity: 1, scale: 1, x: 0 }}
+        viewport={{ once: true }}
       >
         <div className="bg-orange-500 rounded-full flex items-center justify-center max-w-[40px] ">
           <Image
@@ -29,6 +30,7 @@ const Services = () => {
         initial={{ opacity: 0, y: 100 }}
         transition={{ duration: 0.8 }}
         whileInView={{ opacity: 1, scale: 1, y: 0 }}
+        viewport={{ once: true }}
       >
         <div className="bg-orange-500 rounded-full flex items-center justify-center max-w-[40px] ">
           <Image
@@ -49,6 +51,7 @@ const Services = () => {
         initial={{ opacity: 0, x: 100 }}
         transition={{ duration: 0.5 }}
         whileInView={{ opacity: 1, scale: 1, x: 0 }}
+        viewport={{ once: true }}
       >
         <div className="bg-orange-500 rounded-full flex items-center justify-center max-w-[40px] ">
           <Image

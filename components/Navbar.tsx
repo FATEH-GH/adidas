@@ -23,7 +23,7 @@ const NavBar = () => {
         {/* Desktop Navigation */}
         <NavBody>
           <NavbarLogo />
-          <NavItems items={NavList} className="" />
+          <NavItems items={NavList} />
           <div className="flex items-center gap-4">
             <ModeToggle />
           </div>

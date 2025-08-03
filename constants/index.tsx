@@ -4,7 +4,7 @@ import shoecard3 from "../public/shoecard3.png";
 import shoecard4 from "../public/shoecard4.png";
 
 export const NavList = [
-  { link: "#home", name: "Home" },
+  { link: "/", name: "Home" },
   { link: "#product", name: "Product" },
   { link: "#AboutUs", name: "About Us" },
   { link: "#ContactUs", name: "Contact Us" },
