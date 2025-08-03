@@ -4,10 +4,10 @@ import shoecard3 from "../public/shoecard3.png";
 import shoecard4 from "../public/shoecard4.png";
 
 export const NavList = [
-  { href: "#home", label: "Home" },
-  { href: "#product", label: "Product" },
-  { href: "#AboutUs", label: "About Us" },
-  { href: "#ContactUs", label: "Contact Us" },
+  { link: "#home", name: "Home" },
+  { link: "#product", name: "Product" },
+  { link: "#AboutUs", name: "About Us" },
+  { link: "#ContactUs", name: "Contact Us" },
 ];
 
 export const Products = [

@@ -17,16 +17,17 @@ const Hero = () => {
   const [BigShoe, setBigShoe] = useState(bigshoe1);
   console.log(BigShoe.src);
   return (
-    <section id="home" className="max-container flex flex-col xl:flex-row mb-8">
+    <section
+      id="home"
+      className="max-container flex flex-col xl:flex-row mb-8 mt-[160px]"
+    >
       <div className="xl:w-1/2 ">
-        <h1 className="text-orange-500 text-[18px] px-6 ">
+        <h1 className="text-orange-500 text-2xl md:text-3xl lg:text-5xl px-6 ">
           Our Summer collection
         </h1>
 
         <h2 className="font-bold text-[60px] md:text-[80px] py-6 px-6">
-          <span className=" xl:bg-white rounded-xl dark:shadow-white xl:whitespace-nowrap relative z-10 pr-20 xl:shadow-2xl dark:text-blue-950 sm:px-4">
-            The New Arrival
-          </span>
+          The New Arrival
           <br /> <span className="text-orange-500">Adidas</span> Shoes
         </h2>
         <p className="text-[20px] text-gray-500 pb-8 px-6 md:max-w-md">

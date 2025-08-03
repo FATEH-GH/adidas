@@ -1,30 +1,30 @@
 "use client";
 
 import Link from "next/link";
-import Lottie from "lottie-react";
-import AdidasAnimation from "../public/AdidasAnimationLogo.json";
 import Image from "next/image";
 import { GetInTouch, Help, Products } from "@/constants";
+import DarkAdidas from "../public/AdidasDark.png";
+import LightAdidas from "../public/AdidasLight.png";
 
-import { Waypoint } from "react-waypoint";
-import React, { useState } from "react";
+import React from "react";
+import { useTheme } from "next-themes";
 
 const Footer = () => {
-  let [renderLottie, setRenderLottie] = useState(false);
+  const { theme } = useTheme();
+
+  const logoFooter = theme === "dark" ? DarkAdidas : LightAdidas;
   return (
     <footer className="mb-12 mt-24" id="Contact Us">
       <div className=" max-container flex flex-wrap gap-8 lg:flex-row lg:justify-between lg:items-center">
         <div className="px-4">
           <h2 className="h-[125px] w-[125px] xl:h-[175px] xl:w-[175px]">
             <Link href="/">
-              <Waypoint onEnter={() => setRenderLottie(true)} />
-              {renderLottie && (
-                <Lottie
-                  animationData={AdidasAnimation}
-                  loop={false}
-                  className="bg-white rounded-full"
-                />
-              )}
+              <Image
+                src={logoFooter}
+                height={80}
+                width={100}
+                alt="Footer Logo"
+              />
             </Link>
           </h2>
           <div className="max-md:max-w-[400px] max-w-[350px]">
@@ -102,7 +102,7 @@ const Footer = () => {
       </div>
       <div>
         <div className="flex flex-col items-center justify-center mt-10 md:flex-row md:justify-between md:px-8 ">
-          <p>Copyright. All rights reserved.</p>
+          <p>Copyright 2025. All rights reserved.</p>
           <p>Terms & Conditions</p>
         </div>
       </div>
