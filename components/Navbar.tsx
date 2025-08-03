@@ -20,7 +20,7 @@ const NavBar = () => {
   return (
     <section className="max-container  my-4">
       <Navbar className="bg-transparent">
-        {/* Desktop Navigation */}
+        {/* Desktop Navigation - */}
         <NavBody>
           <NavbarLogo />
           <NavItems items={NavList} />
