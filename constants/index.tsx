@@ -48,3 +48,48 @@ export const products = [
   },
   { price: 220.2, name: "adidas-originals-forest-grove-c", image: shoecard4 },
 ];
+
+export const testimonials = [
+  {
+    name: "Morich Brown",
+    testimonial:
+      "The attention to detail and the quality of the product exceeded my expectations. Highly recommended!",
+    rating: "4.5",
+    image: "/customer1.jpeg",
+  },
+  {
+    name: "Lota Mongeskar",
+    testimonial:
+      "The product not only met but exceeded my expectations. I'll definitely be a returning customer!",
+    rating: "4",
+    image: "/customer2.svg",
+  },
+  {
+    name: "John Doe",
+    testimonial:
+      "These shoes are insanely comfortable—wore them all day and my feet felt great. Stylish and supportive!",
+    rating: "4",
+    image: "/customer3.png",
+  },
+  {
+    name: "Liam Patterson",
+    testimonial:
+      "I was hesitant at first, but once I tried them on, I knew I made the right choice. Easily my favorite pair now.",
+    rating: "4.6",
+    image: "/customer4.png",
+  },
+  {
+    name: "Amir Delgado",
+    testimonial:
+      "TThey fit perfectly right out of the box. Great quality and attention to detail. Highly recommended!",
+    rating: "4.5",
+    image: "/customer5.png",
+  },
+  {
+    name: "Julien Moreau",
+    testimonial:
+      "Honestly, the photos don’t do them justice. The quality feels premium and the comfort is unmatched.",
+    rating: "4.3",
+    image: "/customer6.png",
+  },
+];

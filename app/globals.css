@@ -3,18 +3,7 @@
 @tailwind utilities;
 
 @theme inline {
-  --animate-move: move 5s linear infinite;
-
-  @keyframes move {
-    0% {
-      transform: translateX(-200px);
-    }
-    100% {
-      transform: translateX(200px);
-    }
-  }
 }
-
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -76,6 +65,37 @@
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
     --ring: 212.7 26.8% 83.9%;
+  }
+}
+/* --animate-move: move 5s linear infinite;
+  --animate-scroll: scroll var(--animation-duration, 40s)
+    var(--animation-direction, forwards) linear infinite;
+
+  @keyframes move {
+    0% {
+      transform: translateX(-200px);
+    }
+    100% {
+      transform: translateX(200px);
+    }
+  }
+}
+@keyframes scroll {
+  to {
+    transform: translateY(calc(-50% - 0.5rem));
+  }
+} */
+
+@layer utilities {
+  @keyframes scroll {
+    to {
+      transform: translateY(-50%);
+    }
+  }
+
+  .animate-scroll {
+    animation: scroll var(--animation-duration, 40s)
+      var(--animation-direction, forwards) linear infinite;
   }
 }
 
