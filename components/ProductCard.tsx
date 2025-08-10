@@ -10,13 +10,13 @@ const Product = ({ image, price, name }: ProductCardProps) => {
         <figure className="flex items-center justify-center">
           <Image src={image} alt="shoeImage" height={300} width={300} />
         </figure>
-        <div className=" border-2">
+        <div>
           <div className="flex items-center justify-start gap-2 my-2">
             <Image src="/star.svg" height={25} width={25} alt="star" />
             <p className="text-gray-500 text-[18px] ">(4.5)</p>
           </div>
 
-          <h5 className="font-semibold md:text-lg lg:text-xl mb-2 text-[18px] border-2 border-white">
+          <h5 className="font-semibold md:text-lg lg:text-xl mb-2 text-[18px] ">
             {name}
           </h5>
           <p className="mb-4 text-red-400 text-[22px] font-semibold">
