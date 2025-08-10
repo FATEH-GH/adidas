@@ -15,7 +15,6 @@ let shoes: any[] = [bigshoe1, bigshoe2, bigshoe3];
 
 const Hero = () => {
   const [BigShoe, setBigShoe] = useState(bigshoe1);
-  console.log(BigShoe.src);
   return (
     <section
       id="home"

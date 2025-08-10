@@ -5,7 +5,7 @@ const Services = () => {
   return (
     <section className="my-32 mx-8  flex flex-shrink gap-10 max-md:flex-col">
       <DivMotion
-        className="shadow-2xl p-12 rounded-xl dark:shadow-white "
+        className="shadow-2xl p-12 rounded-xl border-2  "
         initial={{ opacity: 0, x: -100 }}
         transition={{ duration: 0.5 }}
         whileInView={{ opacity: 1, scale: 1, x: 0 }}
@@ -26,7 +26,7 @@ const Services = () => {
         </p>
       </DivMotion>
       <DivMotion
-        className="shadow-2xl p-12 rounded-xl dark:shadow-white"
+        className="shadow-2xl p-12 rounded-xl border-2 "
         initial={{ opacity: 0, y: 100 }}
         transition={{ duration: 0.8 }}
         whileInView={{ opacity: 1, scale: 1, y: 0 }}
@@ -47,7 +47,7 @@ const Services = () => {
         </p>
       </DivMotion>
       <DivMotion
-        className="shadow-2xl p-12 rounded-xl dark:shadow-white"
+        className="shadow-2xl p-12 rounded-xl border-2 "
         initial={{ opacity: 0, x: 100 }}
         transition={{ duration: 0.5 }}
         whileInView={{ opacity: 1, scale: 1, x: 0 }}

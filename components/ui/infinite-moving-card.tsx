@@ -2,10 +2,8 @@
 
 import { cn } from "@/lib/utils";
 import React, { useEffect, useState } from "react";
-// import TweetCard from "./tweet-card";
 import { testimonials } from "@/constants";
 import Image from "next/image";
-import test from "node:test";
 
 export const InfiniteMovingCards = ({
   direction = "up",
@@ -61,15 +59,14 @@ export const InfiniteMovingCards = ({
   const getSpeed = () => {
     if (containerRef.current) {
       if (speed === "fast") {
-        containerRef.current.style.setProperty("--animation-duration", "10s");
+        containerRef.current.style.setProperty("--animation-duration", "20s");
       } else if (speed === "normal") {
-        containerRef.current.style.setProperty("--animation-duration", "40s");
-      } else {
         containerRef.current.style.setProperty("--animation-duration", "50s");
+      } else {
+        containerRef.current.style.setProperty("--animation-duration", "70s");
       }
     }
   };
-  // console.log("the array : ", testimonials, testimonials.reverse());
   return (
     <div
       ref={containerRef}
