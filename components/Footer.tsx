@@ -113,7 +113,7 @@ const Footer = () => {
       </div>
       <div>
         <div className="flex flex-col items-center justify-center mt-10 md:flex-row md:justify-between md:px-8 ">
-          <p>Copyright 2024. All rights reserved.</p>
+          <p>Copyright 2025. All rights reserved.</p>
           <p>Terms & Conditions</p>
         </div>
       </div>
